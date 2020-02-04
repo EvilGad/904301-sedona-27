@@ -22,10 +22,10 @@
 
 	</header>
 	<main>
-		<h1>Поиск жилья "Седона"</h1>
+		<h1 class="visual-hidden">Поиск жилья "Седона"</h1>
 
 		<section>
-			<h2>Девиз</h2>
+			<h2 class="visual-hidden">Девиз</h2>
 			<h3>Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
 			<p>Рассмотрим 5 причин, по которым седона круче, чем Гранд каньон!</p>
 		</section>
@@ -34,7 +34,7 @@
 		<section></section>
 		<section></section>
 		<section>
-			<h2>Интерес</h2>
+			<h2 class="visual-hidden">Интерес</h2>
 			<h3>Заинтересовались?</h3>
 			<p>Укажите предполагаемые даты поездки,<br>и мы покажем  вам лучшие предложения гостиниц в седоне</p>
 			<button type="button">Поиск гостиниц в седоне</button>
@@ -49,18 +49,32 @@
 		</p>
 		<div>
 			<ul>
-				<li><a href="#"></a><img src="img/twitter.svg">Twitter</li>
-				<li><a href="#"></a><img src="img/fb-icon.svg">Facebook</li>
-				<li><a href="#"></a><img src="img/youtube.svg">YouTube</li>
+				<li><a href="#"></a><img src="img/twitter.svg" width="17" height="15">Twitter</li>
+				<li><a href="#"></a><img src="img/fb-icon.svg" width="12" height="22">Facebook</li>
+				<li><a href="#"></a><img src="img/youtube.svg" width="20" height="16">YouTube</li>
 			</ul>
 		</div>
 		<div>
 			<p>Website by</p>
-			<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logo академии">
+			<a href="https://htmlacademy.ru/intensive/htmlcss">
+				<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logo академии">
+			</a>
 		</div>
 	</footer>
 	<section>
-		<h2>Форма заселения</h2>
+		<h2 class="visual-hidden">Форма заселения</h2>
+		<form action="#" method="post">
+			<label for="date_start">Дата заезда</label>
+				<input type="date" name="date_str" id="date_start" value="2012-06-01">	
+			<label for="date_finish">Дата выезда</label>
+				<input type="date" name="date_fin" id="date_finish" value="2012-06-01">
+			<label for="number_of_adults">Взрослые:</label>
+				<input type="number" size="3" min="1" max="4" name="adults" id="number_of_adults" value="2">		
+			<label for="amount_of_children">Дети:</label>
+				<input type="number" size="20" min="1" max="4" name="children" id="number_of_adults" value="2">
+			<a href="#">Найти</a>
+		</form>
+
 		<!-- тут должна быть форма, наверное-->
 	</section>
   </body>
