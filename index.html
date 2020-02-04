@@ -9,11 +9,9 @@
 		<nav>
 			<img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
 
-			<a href="#">
-				<img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome">
-			</a>
+			
 			<ul>
-				<li><a href="info.html">Информация</a></li>
+				<li><a href="index.html">Информация</a></li>
 				<li><a href="pfoto_vdeo.html">Фото и видео</a></li>
 				<li><a href="map.html">Карта штата</a></li>
 				<li><a href="catalog.html">Гостиницы</a></li>
@@ -22,6 +20,11 @@
 
 	</header>
 	<main>
+		<div class="header">
+			<a href="index.html">
+				<img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome">
+			</a>
+		</div>
 		<h1 class="visual-hidden">Поиск жилья "Седона"</h1>
 
 		<section>
@@ -37,7 +40,7 @@
 			<h2 class="visual-hidden">Интерес</h2>
 			<h3>Заинтересовались?</h3>
 			<p>Укажите предполагаемые даты поездки,<br>и мы покажем  вам лучшие предложения гостиниц в седоне</p>
-			<button type="button">Поиск гостиниц в седоне</button>
+			<a href="#">Поиск гостиниц в седоне</a>
 
 		</section>
 
@@ -49,9 +52,9 @@
 		</p>
 		<div>
 			<ul>
-				<li><a href="#"></a><img src="img/twitter.svg" width="17" height="15">Twitter</li>
-				<li><a href="#"></a><img src="img/fb-icon.svg" width="12" height="22">Facebook</li>
-				<li><a href="#"></a><img src="img/youtube.svg" width="20" height="16">YouTube</li>
+				<li><a href="#" aria-label="Twitter"></a><img src="img/twitter.svg" width="17" height="15">Twitter</li>
+				<li><a href="#" aria-label="Facebook"></a><img src="img/fb-icon.svg" width="12" height="22">Facebook</li>
+				<li><a href="#" aria-label="YouTube"></a><img src="img/youtube.svg" width="20" height="16">YouTube</li>
 			</ul>
 		</div>
 		<div>
@@ -72,10 +75,10 @@
 				<input type="number" size="3" min="1" max="4" name="adults" id="number_of_adults" value="2">		
 			<label for="amount_of_children">Дети:</label>
 				<input type="number" size="20" min="1" max="4" name="children" id="number_of_adults" value="2">
-			<a href="#">Найти</a>
+			
+			<button type="button">Найти</button>
 		</form>
 
-		<!-- тут должна быть форма, наверное-->
 	</section>
   </body>
 </html>
