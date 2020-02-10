@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+.button{
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+  	vertical-align: middle;
+  	text-transform: uppercase;
+
+  	background-color: #8B8D8F;
+  	border: none;
+}
+.btn_hotel_search{
+	background-color: #766357;
+}
+.btn_hotel_search:hover,
+.btn_hotel_search:focus,
+.btn_hotel_search:focus {
+	background-color: #764857;
+}
+.find_button{
+	background-color: #81b3d2;
+}
+
+.main_navigation{
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.site_navigation{
+	list-style: none;
+}
+
+.site_navigation a{
+	color: #000000;
+}
+
+.site_navigation a:hover,
+.site_navigation a:focus{
+	background-color: #e5f2fa;
+}
+
+.motto{
+	text-align: center;
+}
+
+.motto h3{
+	font-size: 21px;
+}
+
+.interesting{
+	text-align: center;
+}
+.interesting h3{
+	font-size: 30px;
+	line-height: 36px;
+}
+.interesting p{
+	line-height: 24px;
+	}
+.appointment-item input{
+	font: inherit;
+
+	background-color: transparent;
+	border: 0;
+	background-color: #f2f2f2;
+}
+.appointment-item input:focus {
+  border-color: #e5f2fa;
+}
+.main_footer{
+	background-color: #ffffff;
+
+	opacity: 0.9;
+}
+.footer_contacts a {
+  color: #000000;
+  text-decoration: underline;
+
+}
+
+.footer_contacts a:hover,
+.footer_contacts a:focus {
+  text-decoration: none;
+}
+.footer_window{
+	position: relative;
+  	z-index: 1;
+}
+.map{
+	position: relative;
+	z-index: 2;
+}
+.footer_social{
+  text-align: center;
+}
+
+.footer_social ul {
+  list-style: none;
+}
+
+.social_btn {
+  color: #000000;
+}
+.footer_copyright {
+  text-align: center;
+}

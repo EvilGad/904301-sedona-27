@@ -3,31 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-	<header>
-		<nav>
-			<img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
 
-			
-			<ul>
+	<header class="main_header">
+		
+		<nav class="main_navigation">
+			<img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
+			<ul class="site_navigation">
 				<li><a href="index.html">Информация</a></li>
 				<li><a href="pfoto_vdeo.html">Фото и видео</a></li>
 				<li><a href="map.html">Карта штата</a></li>
 				<li><a href="catalog.html">Гостиницы</a></li>
 			</ul>
+			
 		</nav>
 
 	</header>
 	<main>
-		<div class="header">
-			<a href="index.html">
-				<img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome">
-			</a>
+		<div class="main_header_logo">
+				<a href="index.html" >
+					<img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome">
+				</a>
 		</div>
 		<h1 class="visual-hidden">Поиск жилья "Седона"</h1>
 
-		<section>
+		<section class="motto">
 			<h2 class="visual-hidden">Девиз</h2>
 			<h3>Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
 			<p>Рассмотрим 5 причин, по которым седона круче, чем Гранд каньон!</p>
@@ -36,47 +40,58 @@
 		<section></section>
 		<section></section>
 		<section></section>
-		<section>
+		<section class="interesting">
 			<h2 class="visual-hidden">Интерес</h2>
 			<h3>Заинтересовались?</h3>
 			<p>Укажите предполагаемые даты поездки,<br>и мы покажем  вам лучшие предложения гостиниц в седоне</p>
-			<a href="#">Поиск гостиниц в седоне</a>
+			<a class="button btn_hotel_search" href="#">Поиск гостиниц в седоне</a>
 
 		</section>
 
 	</main>
-	<footer>
-		<p>
-			<a href="#">#VISITSEDONA</a>
-			<a href="tel: +7(495)666-02-66">Тел: +7(495)666-02-66</a>
-		</p>
-		<div>
-			<ul>
-				<li><a href="#" aria-label="Twitter"></a><img src="img/twitter.svg" width="17" height="15">Twitter</li>
-				<li><a href="#" aria-label="Facebook"></a><img src="img/fb-icon.svg" width="12" height="22">Facebook</li>
-				<li><a href="#" aria-label="YouTube"></a><img src="img/youtube.svg" width="20" height="16">YouTube</li>
-			</ul>
-		</div>
-		<div>
-			<p>Website by</p>
-			<a href="https://htmlacademy.ru/intensive/htmlcss">
-				<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logo академии">
-			</a>
+	<footer class="main_footer">
+		<div class="map"><a href="#" ><img src="img/map.png" width="1200" height="593"></a>
+			<div class="footer_window">
+				<p class="footer_contacts">
+					<a href="#">#Visitsedona</a>
+					<a href="tel: +7(495)666-02-66">Тел: +7(495)666-02-66</a>
+				</p>
+				<div class="footer_social">
+					<ul>
+						<li><a class="social_btn" href="#" aria-label="Twitter"><img src="img/twitter.svg" width="17" height="15">Twitter</a></li>
+						<li><a class="social_btn" href="#" aria-label="Facebook"><img src="img/fb-icon.svg" width="12" height="22">Facebook</a></li>
+						<li><a class="social_btn" href="#" aria-label="YouTube"><img src="img/youtube.svg" width="20" height="16">YouTube</a></li>
+					</ul>
+				</div>
+				<div class="footer_copyright">
+					<p>Website by</p>
+					<a href="https://htmlacademy.ru/intensive/htmlcss" >
+						<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logo академии">
+					</a>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<section>
 		<h2 class="visual-hidden">Форма заселения</h2>
 		<form action="#" method="post">
-			<label for="date_start">Дата заезда</label>
-				<input type="date" name="date_str" id="date_start" value="2012-06-01">	
-			<label for="date_finish">Дата выезда</label>
-				<input type="date" name="date_fin" id="date_finish" value="2012-06-01">
-			<label for="number_of_adults">Взрослые:</label>
-				<input type="number" size="3" min="1" max="4" name="adults" id="number_of_adults" value="2">		
-			<label for="amount_of_children">Дети:</label>
-				<input type="number" size="20" min="1" max="4" name="children" id="number_of_adults" value="2">
-			
-			<button type="button">Найти</button>
+			<p class="appointment-item">
+				<label for="date_start">Дата заезда</label>
+					<input type="date" name="date_str" id="date_start" value="" placeholder="2012-06-01">	
+			</p>
+			<p class="appointment-item">
+				<label for="date_finish">Дата выезда</label>
+					<input type="date" name="date_fin" id="date_finish" value="" placeholder="2012-06-01">
+			</p>
+			<p class="appointment-item">
+				<label for="number_of_adults">Взрослые:</label>
+					<input type="number" size="3" min="1" max="4" name="adults" id="number_of_adults" placeholder="2">	
+			</p>
+			<p class="appointment-item"> 	
+				<label for="amount_of_children">Дети:</label>
+					<input type="number" size="20" min="1" max="4" name="children" id="number_of_adults" placeholder="2">
+			</p>
+			<button type="button" class="button find_button">Найти</button>
 		</form>
 
 	</section>
