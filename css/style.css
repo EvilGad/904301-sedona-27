@@ -9,7 +9,7 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #F5DEB3;
 }
 
 a {
@@ -59,20 +59,25 @@ a {
 	color: #000000;
 
 	background-color: #ffffff;
-
+	
 }
 .main_header{
+	min-width: 1200px;
 	background-color: #c8d8fa;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+
 }
+
 .main_header_logo{
-	display: block;
+	width: 459px;
+	height:353px;
     margin-left: auto;
     margin-right: auto;
 
     padding-top: 76px;
+
 }
 
 .main_header_intro{
@@ -83,6 +88,11 @@ a {
 	background-position-y: -90px;
 }
 
+.header_logo{
+   	width: 140px;
+   	height: 71px;
+}
+
 .position{
 	position: relative;
 }
@@ -90,7 +100,7 @@ a {
 
 .polygon{
 	height: 59px;
-    width: 100%;
+    width: 1203px;
     background-image: url(../img/polygon.svg);
     background-size: cover;
     background-color: transparent;
@@ -102,6 +112,7 @@ a {
 	list-style: none;
 
 	margin-bottom: 0px;
+	padding: 0;
 }
 
 .site_navigation a{
@@ -143,7 +154,6 @@ a {
 }
 .main_footer{
 	background-color: #ffffff;
-
 	opacity: 0.9;
 }
 .footer_contacts a {
@@ -174,4 +184,76 @@ a {
 .result li{
 	list-style: none;
 }
+.logo_academy{
+	width: 115px;
+	height: 41px;
+}
 
+/*Сеточные стили*/
+html,
+body{
+	width: 1200px;
+	height: 2762px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main_header{
+	min-height: 485px;
+	margin-bottom: 22px;
+}
+
+.main_navigation{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.main_navigation_wrapper{
+	width: 100%;
+	margin-bottom: 76px;
+	min-height: 56px;
+
+}
+
+.container{
+	width: 1200px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.site_navigation{
+	min-height: 56px;
+}
+.main_header_intro{
+	display: flex;
+	justify-content: center;
+}
+
+
+.main_footer{
+	min-height: 120px;
+	padding: 36px 0;
+
+}
+.main_footer .container {
+  display: flex;
+}
+.footer_contacts {
+	width: 223px;
+  	margin: 0;
+  	min-height: 48px;
+  	margin-right: 169px;
+}
+.footer_social {
+	width: 150px;
+  	margin: 0;
+  	min-height: 48px;
+}
+.footer_copyright {
+	width: 197px;
+  	margin: 0;
+  	min-height: 48px;
+  	margin-left: auto;
+}

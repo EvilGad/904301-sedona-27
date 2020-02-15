@@ -12,22 +12,26 @@
 	<header class="main_header">
 		
 		<nav class="main_navigation">
-			<img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
-			<ul class="site_navigation">
-				<li><a href="index.html">Информация</a></li>
-				<li><a href="pfoto_vdeo.html">Фото и видео</a></li>
-				<li><a href="map.html">Карта штата</a></li>
-				<li><a href="catalog.html">Гостиницы</a></li>
-			</ul>
-			
+			<img src="img/logo-sedona.svg" class="header_logo" alt="Sedona">
+			<div class="main_navigation_wrapper">
+				<div class="container">
+					<ul class="site_navigation">
+						<li><a href="index.html">Информация</a></li>
+						<li><a href="pfoto_vdeo.html">Фото и видео</a></li>
+						<li></li>
+						<li><a href="map.html">Карта штата</a></li>
+						<li><a href="catalog.html">Гостиницы</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 		<div class="main_header_intro">
 			<a href="index.html">
-				<img src="img/intro-welcome.svg" class="main_header_logo" width="459" height="353" alt="Welcome">
+				<img src="img/intro-welcome.svg" class="main_header_logo" alt="Welcome">
 			</a>
 		</div>
 	</header>
-	<main class="position">
+	<main class="position container">
 		
 		<div class="polygon"></div>
 
@@ -49,15 +53,39 @@
 			<a class="button btn_hotel_search" href="#">Поиск гостиниц в седоне</a>
 
 		</section>
+		<section>
+			<h2 class="visually_hidden">Форма заселения</h2>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<p class="appointment-item">
+					<label for="date_start">Дата заезда</label>
+						<input type="date" name="date_str" id="date_start" value="" placeholder="2012-06-01">	
+				</p>
+				<p class="appointment-item">
+					<label for="date_finish">Дата выезда</label>
+						<input type="date" name="date_fin" id="date_finish" value="" placeholder="2012-06-01">
+				</p>
+				<p class="appointment-item">
+					<label for="number_of_adults">Взрослые:</label>
+						<input type="number" size="3" min="1" max="4" name="adults" id="number_of_adults" placeholder="2">	
+				</p>
+				<p class="appointment-item"> 	
+					<label for="amount_of_children">Дети:</label>
+						<input type="number" size="20" min="1" max="4" name="children" id="number_of_adults" placeholder="2">
+				</p>
+				<button type="submit" class="button find_button">Найти</button>
+			</form>
+
+		</section>
 
 	</main>
+
 	<footer class="main_footer">
-		<div><a href="#" ><img src="img/map.png" width="1200" height="593"></a>
-			<div>
-				<p class="footer_contacts">
-					<a href="#">#Visitsedona</a>
-					<a href="tel: +7(495)666-02-66">Тел: +7(495)666-02-66</a>
-				</p>
+		
+			<div class="container">
+				<div class="footer_contacts">
+					<p><a href="#">#Visitsedona</a></p>
+					<p><a href="tel: +7(495)666-02-66">Тел: +7(495)666-02-66</a></p>
+				</div>
 				<div class="footer_social">
 					<ul>
 						<li><a class="social_btn" href="#" aria-label="Twitter"><img src="img/twitter.svg" width="17" height="15">Twitter</a></li>
@@ -68,34 +96,14 @@
 				<div class="footer_copyright">
 					<p>Website by</p>
 					<a href="https://htmlacademy.ru/intensive/htmlcss" >
-						<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logo академии">
+						<img src="img/logo-htmlacademy.svg" class="logo_academy" alt="logo академии">
 					</a>
 				</div>
 			</div>
-		</div>
+		
 	</footer>
-	<section>
-		<h2 class="visually_hidden">Форма заселения</h2>
-		<form action="https://echo.htmlacademy.ru" method="post">
-			<p class="appointment-item">
-				<label for="date_start">Дата заезда</label>
-					<input type="date" name="date_str" id="date_start" value="" placeholder="2012-06-01">	
-			</p>
-			<p class="appointment-item">
-				<label for="date_finish">Дата выезда</label>
-					<input type="date" name="date_fin" id="date_finish" value="" placeholder="2012-06-01">
-			</p>
-			<p class="appointment-item">
-				<label for="number_of_adults">Взрослые:</label>
-					<input type="number" size="3" min="1" max="4" name="adults" id="number_of_adults" placeholder="2">	
-			</p>
-			<p class="appointment-item"> 	
-				<label for="amount_of_children">Дети:</label>
-					<input type="number" size="20" min="1" max="4" name="children" id="number_of_adults" placeholder="2">
-			</p>
-			<button type="submit"  class="button find_button">Найти</button>
-		</form>
 
-	</section>
+	
+	<div><a href="#" ><img src="img/map.png" width="1200" height="593"></a></div>
   </body>
 </html>
