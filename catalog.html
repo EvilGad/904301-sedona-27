@@ -10,15 +10,18 @@
 <body>
 	<header class="main_header">
 		<nav class="main_navigation">
-			<a href="index.html">
-				<img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
-			</a>
-			<ul class="site_navigation">
-				<li><a href="index.html">Информация</a></li>
-				<li><a href="pfoto_vdeo.html">Фото и видео</a></li>
-				<li><a href="map.html">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
-			</ul>
+			<img src="img/logo-sedona.svg" class="header_logo" alt="Sedona">
+			<div class="main_navigation_wrapper">
+				<div class="container">
+					<ul class="site_navigation">
+						<li><a href="index.html">Информация</a></li>
+						<li><a href="pfoto_vdeo.html">Фото и видео</a></li>
+						<li></li>
+						<li><a href="map.html">Карта штата</a></li>
+						<li><a href="catalog.html">Гостиницы</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
 	<main>
@@ -87,24 +90,28 @@
 			</ul>
 		</section>
 	</main>
-	<footer class="main_footer">
-		<p class="footer_contacts">
-			<a href="#">#Visitsedona</a>
-			<a href="tel: +7(495)666-02-66">Тел: +7(495)666-02-66</a>
-		</p>
-		<div class="footer_social">
-			<ul>
-				<li><a class="social_btn" href="#" aria-label="Twitter"><img src="img/twitter.svg" width="17" height="15">Twitter</a></li>
-				<li><a class="social_btn" href="#" aria-label="Facebook"><img src="img/fb-icon.svg" width="12" height="22">Facebook</a></li>
-				<li><a class="social_btn" href="#" aria-label="YouTube"><img src="img/youtube.svg" width="20" height="16">YouTube</a></li>
-			</ul>
-		</div>
-		<div class="footer_copyright">
-			<p>Website by</p>
-			<a href="https://htmlacademy.ru/intensive/htmlcss">
-				<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logo академии">
-			</a>
-		</div>
+<footer class="main_footer">
+		
+			<div class="container">
+				<div class="footer_contacts">
+					<p><a href="#">#Visitsedona</a></p>
+					<p><a href="tel: +7(495)666-02-66">Тел: +7(495)666-02-66</a></p>
+				</div>
+				<div class="footer_social">
+					<ul>
+						<li><a class="social_btn" href="#" aria-label="Twitter"><img src="img/twitter.svg" width="17" height="15">Twitter</a></li>
+						<li><a class="social_btn" href="#" aria-label="Facebook"><img src="img/fb-icon.svg" width="12" height="22">Facebook</a></li>
+						<li><a class="social_btn" href="#" aria-label="YouTube"><img src="img/youtube.svg" width="20" height="16">YouTube</a></li>
+					</ul>
+				</div>
+				<div class="footer_copyright">
+					<p>Website by</p>
+					<a href="https://htmlacademy.ru/intensive/htmlcss" >
+						<img src="img/logo-htmlacademy.svg" class="logo_academy" alt="logo академии">
+					</a>
+				</div>
+			</div>
+		
 	</footer>
 </body>
 </html>

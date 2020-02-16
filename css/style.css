@@ -79,9 +79,13 @@ a {
     padding-top: 76px;
 
 }
+.main_header_intro a{
+	width: 459px;
+	height:353px;
 
+}
 .main_header_intro{
-	height: 667px;
+	height: 613px;
 	background-image: url("../img/background-photo.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
@@ -102,10 +106,10 @@ a {
 	height: 59px;
     width: 1203px;
     background-image: url(../img/polygon.svg);
-    background-size: cover;
     background-color: transparent;
     position: absolute;
-    top: -76px;
+    top: -57px;
+    left: -1px;
 }
 
 .site_navigation{
@@ -126,21 +130,49 @@ a {
 
 .motto{
 	text-align: center;
+	background-color: #ffffff;
+	margin-top: -22px;
+	min-height: 216px;
 }
 
 .motto h3{
-	font-size: 21px;
+	width: 440px;
+  	font-size: 21px;
+  	font-weight: bold;
+  	line-height: 1.2;
+  	margin: 0 auto;
+  	padding-top: 61px;
+}
+.text_p p{
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: normal;
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	margin: 0 auto;
+}
+.motto p{
+	line-height: 1.86;
+	padding-top: 38px;
 }
 
 .interesting{
 	text-align: center;
+	background-color: #ffffff;
+    min-height: 291px;
+    margin-top: -30px;
 }
 .interesting h3{
 	font-size: 30px;
-	line-height: 36px;
+	padding-top: 57px;
+	margin: 0 auto;
+  	font-weight: bold;
+  	line-height: 1.2;
 }
 .interesting p{
-	line-height: 24px;
+	width: 434px;
+	line-height: 1.71;
+	padding-bottom: 52px;
 	}
 .appointment-item input{
 	font: inherit;
@@ -188,12 +220,32 @@ a {
 	width: 115px;
 	height: 41px;
 }
+.background_icon{
+	width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+}
+.twitter{
+	width:17px;
+	height: 15px;
+	padding-top: 17px;
+}
+.facebook{
+	width: 12px;
+	height: 22px;
+	padding-top: 13px;
+}
+.youtube{
+	width: 20px;
+	height: 16px;
+	padding-top: 16px;
+}
 
 /*Сеточные стили*/
 html,
 body{
-	width: 1200px;
-	height: 2762px;
+	min-width: 1200px;
+	min-height: 2762px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -207,13 +259,18 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	position: relative;
+}
+.header_logo{
+	position: absolute;
+	
 }
 
 .main_navigation_wrapper{
 	width: 100%;
 	margin-bottom: 76px;
 	min-height: 56px;
+	margin: 0 auto;
 
 }
 
@@ -224,6 +281,10 @@ body{
 }
 
 .site_navigation{
+	display: flex;
+	margin-top: 0;
+	justify-content: space-around;
+	align-items: center;
 	min-height: 56px;
 }
 .main_header_intro{
@@ -241,19 +302,30 @@ body{
   display: flex;
 }
 .footer_contacts {
+	
 	width: 223px;
   	margin: 0;
   	min-height: 48px;
   	margin-right: 169px;
+  	margin-left: 132px;
 }
 .footer_social {
 	width: 150px;
   	margin: 0;
   	min-height: 48px;
 }
+.footer_icon{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0px;
+}
 .footer_copyright {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
 	width: 197px;
   	margin: 0;
   	min-height: 48px;
-  	margin-left: auto;
+  	margin-left: 228px;
 }
