@@ -8,105 +8,107 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-	<header class="main_header">
-		
-		<nav class="main_navigation">
-			<img src="img/logo-sedona.svg" class="header_logo" alt="Sedona">
-			<div class="main_navigation_wrapper">
-				<div class="container">
-					<ul class="site_navigation">
-						<li><a href="index.html">Информация</a></li>
-						<li><a href="pfoto_vdeo.html">Фото и видео</a></li>
-						<li></li>
-						<li><a href="map.html">Карта штата</a></li>
-						<li><a href="catalog.html">Гостиницы</a></li>
-					</ul>
+  	<div class="shadow">
+		<header class="main_header">
+			
+			<nav class="main_navigation">
+				<img src="img/logo-sedona.svg" class="header_logo" alt="Sedona">
+				<div class="main_navigation_wrapper">
+					<div class="container">
+						<ul class="site_navigation">
+							<li><a href="index.html">Информация</a></li>
+							<li><a href="pfoto_vdeo.html">Фото и видео</a></li>
+							<li></li>
+							<li><a href="map.html">Карта штата</a></li>
+							<li><a href="catalog.html">Гостиницы</a></li>
+						</ul>
+					</div>
 				</div>
+			</nav>
+			<div class="main_header_intro">
+				<a href="index.html">
+					<img src="img/intro-welcome.svg" class="main_header_logo" alt="Welcome">
+				</a>
 			</div>
-		</nav>
-		<div class="main_header_intro">
-			<a href="index.html">
-				<img src="img/intro-welcome.svg" class="main_header_logo" alt="Welcome">
-			</a>
-		</div>
-	</header>
-	<main class="position container">
-		
-		<div class="polygon"></div>
+		</header>
+		<main class="position container">
+			
+			<div class="polygon"></div>
 
-		<h1 class="visually_hidden">Поиск жилья "Седона"</h1>
+			<h1 class="visually_hidden">Поиск жилья "Седона"</h1>
 
-		<section class="motto text_p">
-			<h2 class="visually_hidden">Девиз</h2>
-			<h3>Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
-			<p>Рассмотрим 5 причин, по которым седона круче, чем Гранд каньон!</p>
-		</section>
-		<section></section>
-		<section></section>
-		<section></section>
-		<section></section>
-		<section class="interesting text_p">
-			<h2 class="visually_hidden">Интерес</h2>
-			<h3>Заинтересовались?</h3>
-			<p>Укажите предполагаемые даты поездки,<br>и мы покажем  вам лучшие предложения гостиниц в седоне</p>
-			<a class="button btn_hotel_search" href="#">Поиск гостиниц в седоне</a>
+			<section class="motto text_p">
+				<h2 class="visually_hidden">Девиз</h2>
+				<h3>Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
+				<p>Рассмотрим 5 причин, по которым седона круче, чем Гранд каньон!</p>
+			</section>
+			<section></section>
+			<section></section>
+			<section></section>
+			<section></section>
+			<section class="interesting text_p">
+				<h2 class="visually_hidden">Интерес</h2>
+				<h3>Заинтересовались?</h3>
+				<p>Укажите предполагаемые даты поездки,<br>и мы покажем  вам лучшие предложения гостиниц в седоне</p>
+				
+					<a class="button btn_hotel_search" href="#">Поиск гостиниц в седоне</a>
+			
 
-		</section>
-		<section class="form_of_settlement">
-			<h2 class="visually_hidden">Форма заселения</h2>
-			<form action="https://echo.htmlacademy.ru" method="post">
-				<div class="position_form">
-					<div class="appointment_item position_label_input">
-						<label for="date_start">Дата заезда:</label>
-							<input type="date" name="date_str" id="date_start" value="">	
-					</div>
-					<div class="appointment_item position_label_input">
-						<label for="date_finish">Дата выезда:</label>
-							<input type="date" name="date_fin" id="date_finish" value="">
-					</div>
-					<div class="appointment_item position_label_inputs">
-						<div class="adults">
-							<label for="number_of_adults">Взрослые:</label>
-							<input type="number" min="1" max="4" name="adults" id="number_of_adults" placeholder="2">
+			</section>
+			<section class="form_of_settlement">
+				<h2 class="visually_hidden">Форма заселения</h2>
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<div class="position_form">
+						<div class="appointment_item arrival_date">
+							<label for="date_start">Дата заезда:</label>
+								<input type="text" name="date_str" id="date_start" placeholder="24 апреля 2017">	
 						</div>
-						<div class="children">
-							<label for="amount_of_children">Дети:</label>
-							<input type="number" min="1" max="4" name="children" id="number_of_adults" placeholder="2">
+						<div class="appointment_item date_of_departure">
+							<label for="date_finish">Дата выезда:</label>
+								<input type="text" name="date_fin" id="date_finish" placeholder="24 апреля 2017">
+						</div>
+						<div class="appointment_item people">
+							<div class="adults">
+								<label for="number_of_adults">Взрослые:</label>
+								<input type="text" min="1" max="4" name="adults" id="number_of_adults" placeholder="2">
+							</div>
+							<div class="children">
+								<label for="amount_of_children">Дети:</label>
+								<input type="text" min="1" max="4" name="children" id="number_of_adults" placeholder="2">
+							</div>
 						</div>
 					</div>
-				</div>
-				<button type="submit" class="button find_button">Найти</button>
-			</form>
+					<button type="submit" class="button find_button">Найти</button>
+				</form>
 
-		</section>
-		
-	</main>
+			</section>
+			
+		</main>
 
-	<footer class="main_footer">
-		<div class="footer_map"><a href="#" ><img src="img/map.png" width="1200" height="593"></a></div>
-			<div class="container footer_position">
-				<div class="footer_contacts">
-					<p><a href="#">#Visitsedona</a></p>
-					<p><a href="tel: +7(495)666-02-66">Тел: +7(495)666-02-66</a></p>
+		<footer class="main_footer">
+			<div class="footer_map"><a href="#" ><img src="img/map.png" width="1200" height="593"></a></div>
+				<div class="container footer_position">
+					<div class="footer_contacts">
+						<p><a href="#">#Visitsedona</a></p>
+						<p><a href="tel: +7(495)666-02-66">Тел: +7(495)666-02-66</a></p>
+					</div>
+					<div class="footer_social">
+						<ul class="footer_icon">
+							<li class="background_icon"><a class="social_btn" href="#" aria-label="Twitter"><img src="img/twitter.svg" class="twitter" ></a></li>
+							<li class="background_icon"><a class="social_btn" href="#" aria-label="Facebook"><img src="img/fb-icon.svg" class="facebook"></a></li>
+							<li class="background_icon"><a class="social_btn" href="#" aria-label="YouTube"><img src="img/youtube.svg" class="youtube"></a></li>
+						</ul>
+					</div>
+					<div class="footer_copyright">
+						<p>Website by</p>
+						<a href="https://htmlacademy.ru/intensive/htmlcss" >
+							<img src="img/logo-htmlacademy.svg" class="logo_academy" alt="logo академии">
+						</a>
+					</div>
 				</div>
-				<div class="footer_social">
-					<ul class="footer_icon">
-						<li class="background_icon"><a class="social_btn" href="#" aria-label="Twitter"><img src="img/twitter.svg" class="twitter" ></a></li>
-						<li class="background_icon"><a class="social_btn" href="#" aria-label="Facebook"><img src="img/fb-icon.svg" class="facebook"></a></li>
-						<li class="background_icon"><a class="social_btn" href="#" aria-label="YouTube"><img src="img/youtube.svg" class="youtube"></a></li>
-					</ul>
-				</div>
-				<div class="footer_copyright">
-					<p>Website by</p>
-					<a href="https://htmlacademy.ru/intensive/htmlcss" >
-						<img src="img/logo-htmlacademy.svg" class="logo_academy" alt="logo академии">
-					</a>
-				</div>
-			</div>
-		
-	</footer>
-
+			
+		</footer>
+	</div>
 	
 	
   </body>
