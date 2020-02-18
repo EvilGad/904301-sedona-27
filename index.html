@@ -53,35 +53,39 @@
 			<a class="button btn_hotel_search" href="#">Поиск гостиниц в седоне</a>
 
 		</section>
-		<section>
+		<section class="form_of_settlement">
 			<h2 class="visually_hidden">Форма заселения</h2>
 			<form action="https://echo.htmlacademy.ru" method="post">
-				<p class="appointment-item">
-					<label for="date_start">Дата заезда</label>
-						<input type="date" name="date_str" id="date_start" value="" placeholder="2012-06-01">	
-				</p>
-				<p class="appointment-item">
-					<label for="date_finish">Дата выезда</label>
-						<input type="date" name="date_fin" id="date_finish" value="" placeholder="2012-06-01">
-				</p>
-				<p class="appointment-item">
-					<label for="number_of_adults">Взрослые:</label>
-						<input type="number" size="3" min="1" max="4" name="adults" id="number_of_adults" placeholder="2">	
-				</p>
-				<p class="appointment-item"> 	
-					<label for="amount_of_children">Дети:</label>
-						<input type="number" size="20" min="1" max="4" name="children" id="number_of_adults" placeholder="2">
-				</p>
+				<div class="position_form">
+					<div class="appointment_item position_label_input">
+						<label for="date_start">Дата заезда:</label>
+							<input type="date" name="date_str" id="date_start" value="">	
+					</div>
+					<div class="appointment_item position_label_input">
+						<label for="date_finish">Дата выезда:</label>
+							<input type="date" name="date_fin" id="date_finish" value="">
+					</div>
+					<div class="appointment_item position_label_inputs">
+						<div class="adults">
+							<label for="number_of_adults">Взрослые:</label>
+							<input type="number" min="1" max="4" name="adults" id="number_of_adults" placeholder="2">
+						</div>
+						<div class="children">
+							<label for="amount_of_children">Дети:</label>
+							<input type="number" min="1" max="4" name="children" id="number_of_adults" placeholder="2">
+						</div>
+					</div>
+				</div>
 				<button type="submit" class="button find_button">Найти</button>
 			</form>
 
 		</section>
-
+		
 	</main>
 
 	<footer class="main_footer">
-		
-			<div class="container">
+		<div class="footer_map"><a href="#" ><img src="img/map.png" width="1200" height="593"></a></div>
+			<div class="container footer_position">
 				<div class="footer_contacts">
 					<p><a href="#">#Visitsedona</a></p>
 					<p><a href="tel: +7(495)666-02-66">Тел: +7(495)666-02-66</a></p>
@@ -104,6 +108,6 @@
 	</footer>
 
 	
-	<div><a href="#" ><img src="img/map.png" width="1200" height="593"></a></div>
+	
   </body>
 </html>
