@@ -12,13 +12,12 @@
 		<header class="main_header">
 			
 			<nav class="main_navigation">
-				<img src="img/logo-sedona.svg" class="header_logo" alt="Sedona">
 				<div class="main_navigation_wrapper">
 					<div class="container">
 						<ul class="site_navigation position_nav">
 							<li><a href="index.html">Информация</a></li>
 							<li><a href="pfoto_vdeo.html">Фото и видео</a></li>
-							<li></li>
+							<li><a href="index.html" class="position_logo"><img src="img/logo-sedona.svg" class="header_logo" alt="Sedona"></a></li>
 							<li><a href="map.html">Карта штата</a></li>
 							<li><a href="catalog.html">Гостиницы</a></li>
 						</ul>
@@ -42,10 +41,76 @@
 				<h3>Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
 				<p>Рассмотрим 5 причин, по которым седона круче, чем Гранд каньон!</p>
 			</section>
-			<section></section>
-			<section></section>
-			<section></section>
-			<section></section>
+			<section class="real_town">
+				<h2 class="visually_hidden">Достоинство №1</h2>
+				<div class="merit">
+					<div class="content_merit size_merit">
+						<h3>Настоящий городок</h3>
+						<p>— №1 —</p>
+						<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+					</div>
+				</div>
+				<div class="bgr_real_town"></div>
+			</section>
+			<section class="services">
+				<h2 class="visually_hidden">Услуги</h2>
+				<div class="service_block">
+					<div class="content_service size_service_first">
+						<img src="img/icon-1.svg" alt="Жилье">
+						<h3>Жильё</h3>
+						<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+					</div>
+				</div>
+				<div class="service_block">
+					<div class="content_service size_service_second">
+						<img src="img/icon-3.svg" alt="Еда">
+						<h3>Еда</h3>
+						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					</div>
+				</div>
+				<div class="service_block">
+					<div class="content_service size_service_third">
+						<img src="img/icon-2.svg" alt="Сувениры">
+						<h3>Сувениры</h3>
+						<p>Не только китайского, но и местного производства!</p>
+					</div>
+				</div>
+			</section>
+			<section class="real_town">
+				<h2 class="visually_hidden">Достоинство №2</h2>
+				<div class="bgr_devil_bridge"></div>
+				<div class="merit">
+					<div class="content_merit size_bridge">
+						<h3>Там есть Мост дьявола</h3>
+						<p>— №2 —</p>
+						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</div>
+				</div>
+			</section>
+			<section class="real_town">
+				<h2 class="visually_hidden">Достоинство №3 №4 №5</h2>
+				<div class="dignity">
+					<div class="content_dignity size_dignity">
+						<h3>Небольшая площадь</h3>
+						<p>— №3 —</p>
+						<p>Все достопримечательности находятся очень близко</p>
+					</div>
+				</div>
+				<div class="dignity">
+					<div class="content_dignity size_dignity">
+						<h3>Красивая дорога</h3>
+						<p>— №4 —</p>
+						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					</div>
+				</div>
+				<div class="dignity">
+					<div class="content_dignity size_dignity">
+						<h3>Мало туристов</h3>
+						<p>— №5 —</p>
+						<p>Большинство едет в гранд каньон и толпится там</p>
+					</div>
+				</div>
+			</section>
 			<section class="interesting text_p">
 				<h2 class="visually_hidden">Интерес</h2>
 				<h3>Заинтересовались?</h3>
@@ -61,20 +126,26 @@
 					<div class="position_form">
 						<div class="appointment_item arrival_date">
 							<label for="date_start">Дата заезда:</label>
-								<input type="text" name="date_str" id="date_start" placeholder="24 апреля 2017">	
+								<input class="date_input" type="text" name="date_str" id="date_start" placeholder="24 апреля 2017">	
+								<button class="button calendar"></button>
 						</div>
 						<div class="appointment_item date_of_departure">
 							<label for="date_finish">Дата выезда:</label>
-								<input type="text" name="date_fin" id="date_finish" placeholder="24 апреля 2017">
+								<input class="date_input" type="text" name="date_fin" id="date_finish" placeholder="24 апреля 2017">
+								<button class="button calendar"></button>
 						</div>
 						<div class="appointment_item people">
 							<div class="adults">
-								<label for="number_of_adults">Взрослые:</label>
+								<label for="number_of_adults" class="position_adults">Взрослые:</label>
+								<button class="button minus">-</button>
 								<input type="text" min="1" max="4" name="adults" id="number_of_adults" placeholder="2">
+								<button class="button plus">+</button>
 							</div>
 							<div class="children">
-								<label for="amount_of_children">Дети:</label>
+								<label for="amount_of_children" class="position_children">Дети:</label>
+								<button class="button minus">-</button>
 								<input type="text" min="1" max="4" name="children" id="number_of_adults" placeholder="2">
+								<button class="button plus">+</button>
 							</div>
 						</div>
 					</div>
@@ -89,21 +160,19 @@
 			<div class="footer_map"><a href="#" ><img src="img/map.png" width="1200" height="593"></a></div>
 				<div class="container footer_position">
 					<div class="footer_contacts">
-						<p><a href="#">#Visitsedona</a></p>
-						<p><a href="tel: +7(495)666-02-66">Тел: +7(495)666-02-66</a></p>
+						<p ><a href="#">#Visitsedona</a></p>
+						<p ><a href="tel: +7(495)666-02-66">Тел: +7(495)666-02-66</a></p>
 					</div>
 					<div class="footer_social">
 						<ul class="footer_icon">
-							<li><a class="social_btn" href="#" aria-label="Twitter"><img src="img/twitter.svg" class="twitter" ></a></li>
-							<li><a class="social_btn" href="#" aria-label="Facebook"><img src="img/fb-icon.svg" class="facebook"></a></li>
-							<li><a class="social_btn" href="#" aria-label="YouTube"><img src="img/youtube.svg" class="youtube"></a></li>
+							<li><a class="social_btn twitter" href="#" aria-label="Twitter"></a></li>
+							<li><a class="social_btn facebook" href="#" aria-label="Facebook"></a></li>
+							<li><a class="social_btn youtube" href="#" aria-label="YouTube"></a></li>
 						</ul>
 					</div>
 					<div class="footer_copyright">
 						<p>Website by</p>
-						<a href="https://htmlacademy.ru/intensive/htmlcss" >
-							<img src="img/logo-htmlacademy.svg" class="logo_academy" alt="logo академии">
-						</a>
+						<a href="https://htmlacademy.ru/intensive/htmlcss" class="logo_academy" ></a>
 					</div>
 				</div>
 			
