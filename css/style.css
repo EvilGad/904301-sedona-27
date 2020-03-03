@@ -33,6 +33,23 @@ a {
 	width: 1px; 
 	overflow: hidden;
 }
+.visually_hidden:not(:focus):not(:active),
+input[type="checkbox"].visually_hidden, {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button{
 	display: inline-block;
 
@@ -425,6 +442,12 @@ a {
 	padding: 0;
     text-align: center;
 }
+.placeholder_num::placeholder{
+	font-size: 14px;
+  	font-weight: bold;
+  	line-height: 1.86;
+	color: #000000;
+}
 .children{
 	display: flex;
     align-items: center;
@@ -708,13 +731,10 @@ body{
 	background-position: 50% 50%;
 }
 .position_infrastructure{
-	display: inline-block;
+	display: flex;
 	padding-left: 72px;
 }
-.position_type_of_housing{
-	display: inline-block;
-	padding-left: 111px;
-}
+
 .checkbox_filter{
 	flex-grow: 1;
 }
@@ -723,6 +743,9 @@ body{
     margin: 0;
     display: inline-block;
     border: none;
+}
+.position_type_of_housing{
+	padding-left: 111px;
 }
 .style_fildset legend{
 	font-size: 16px;
@@ -742,6 +765,7 @@ body{
 	padding-top: 20px;
 }
 .complex_filter{
+	margin-left: auto;
 	width: 314px;
 	color: #ffffff;
   	text-transform: uppercase;
@@ -801,6 +825,7 @@ body{
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.3);
 }
+
 .filter_sorting li:hover,
 .filter_sorting li:focus{
 	color: #81b3d2;
@@ -810,6 +835,7 @@ body{
 	color: #000000;
 	border: 0;
 }
+
 .filter_sorting li{
 	padding-right: 33px;
 }
@@ -871,6 +897,51 @@ body{
 .pg_dn:active{
 	background-image: url(../img/icon-down-dir-active.svg);
 }
+.filter_option{
+	margin-bottom: 23px;
+    /*padding-left: 40px;*/
+}
+.filter legend{
+	margin-bottom: 24px;
+}
+.filter_ul ul{
+	padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+.filter_option label{
+	position: relative;
+	display: block;
+	cursor: pointer;
+	user-select: none;
+}
+.filter_input_checkbox + label::before {
+	content: "";
+	position: absolute;
+
+	width: 27px;
+	height: 23px;
+	left: 0;
+	background-image: url(../img/checkbox-off.svg);
+	background-repeat: no-repeat;
+
+}
+
+.filter_input_checkbox:checked + label::after{
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	left: 0;
+	background-image: url(../img/checkbox-on-off.svg);
+	background-repeat: no-repeat;
+}
+
+
+
+
+
 /*-------------------------------------------complex filter---------------------------*/
 
 
@@ -1039,21 +1110,22 @@ body{
 .position_children{
 	padding-right: 27px;
 }
-.minus{
-	font-size: 21px;
-    font-weight: bold;
-    line-height: 1.24;
-    color: #ffffff;
-	background-color: #f2f2f2;
+
+.sign{
+	padding: 0;
 	width: 38px;
 	height: 38px;
-	padding: 0;
+	border: none;
+	color: #cacaca;
+	font-weight: 500;
+	font-size: 28px;
 }
-.plus{
-	background-color: #f2f2f2;
-	width: 38px;
-	height: 38px;
-	padding: 0;
+.sign:hover,
+.sign:focus{
+	color: #000000;
+}
+.sign:active{
+	color: #81b3d2;
 }
 /*------------------------------------------section----------------------------------------*/
 .real_town{

@@ -27,26 +27,59 @@
 		<main>
 			<section class="filter">
 				<div class="checkbox_filter">
-					<form class="position_infrastructure">
+					<form class="position_infrastructure filter_ul">
 						<fieldset class="style_fildset">
 							<legend>Инфраструктура:</legend>
-							<div class="icon_label"><label >Бассейн</label></div>
-							<div class="icon_label_off"><label >Парковка</label></div>
-							<div class="icon_label_off"><label >Wi-Fi</label></div>
+							<ul>
+								<li class="filter_option">
+									<input class="visually_hidden filter_input_checkbox" type="checkbox" name="pool" id="filter_pool" checked>
+									<label for="filter_pool">Бассейн</label>
+								</li>
+								<li class="filter_option">
+									<input class="visually_hidden filter_input_checkbox" type="checkbox" name="parking" id="filter_parking" >
+									<label for="filter_parking" >Парковка</label>
+								</li>
+								<li class="filter_option">
+									<input class="visually_hidden filter_input_checkbox" type="checkbox" name="wi_fi" id="filter_wi_fi">
+									<label for="filter_wi_fi">Wi-Fi</label>
+								</li>
+							</ul>
+							<!-- <div class="icon_label_off"><label >Парковка</label></div>
+							<div class="icon_label_off"><label >Wi-Fi</label></div> -->
 							
 						</fieldset>
+						<!-- <fieldset class="style_fildset position_type_of_housing">
+							<legend>Тип жилья:</legend>
+							<div class="icon_label"><label >Гостиница</label></div>
+							<div class="icon_label"><label >Мотель</label></div>
+							<div class="icon_label"><label >Апартаменты</label></div>
+						</fieldset> -->
+						<div class="complex_filter">
+						<div class="filter_range_title">Стоимость в сутки (р):</div>
+					      <div class="price_controls">
+					        <label class="min_price">от <input type="number" name="min_price" value="0"></label>
+					        <label class="max_price">до <input type="number" name="max_price" value="3000"></label>
+					      </div>
+					      <div class="range_controls">
+					        <div class="scale">
+					          <div class="bar"></div>
+					        </div>
+					       <div class="range_toggle range_toggle_min"></div>
+					       <div class="range_toggle range_toggle_max"></div>
+				   		</div>
+				   			<button class="btn_transparent" type="submit" aria-label="show">Показать</button>
 					</form>
-					<form class="position_type_of_housing">
+			<!-- 		<form class="position_type_of_housing">
 						<fieldset class="style_fildset">
 							<legend>Тип жилья:</legend>
 							<div class="icon_label"><label >Гостиница</label></div>
 							<div class="icon_label"><label >Мотель</label></div>
 							<div class="icon_label"><label >Апартаменты</label></div>
 						</fieldset>
-					</form>
+					</form> -->
 					
 				</div>
-				<div class="complex_filter">
+				<!-- <div class="complex_filter">
 					<div class="filter_range_title">Стоимость в сутки (р):</div>
 				      <div class="price_controls">
 				        <label class="min_price">от <input type="number" name="min_price" value="0"></label>
@@ -59,8 +92,8 @@
 				        <div class="range_toggle range_toggle_min"></div>
 				        <div class="range_toggle range_toggle_max"></div>
 				    </div>
-				      <button class="btn_transparent" type="submit">Показать</button>
-				</div>
+				      <button class="btn_transparent" type="submit" aria-label="show">Показать</button>
+				</div> -->
 			</section>
 			<section class="sorting">
 				<h1 class="visually_hidden">Сортировка результата</h1>

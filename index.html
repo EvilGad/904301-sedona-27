@@ -127,29 +127,29 @@
 						<div class="appointment_item arrival_date">
 							<label for="date_start">Дата заезда:</label>
 								<input class="date_input" type="text" name="date_str" id="date_start" placeholder="24 апреля 2017">	
-								<button class="button calendar"></button>
+								<button type="button" class="button calendar" aria-label="calendar"></button>
 						</div>
 						<div class="appointment_item date_of_departure">
 							<label for="date_finish">Дата выезда:</label>
 								<input class="date_input" type="text" name="date_fin" id="date_finish" placeholder="24 апреля 2017">
-								<button class="button calendar"></button>
+								<button type="button" class="button calendar" aria-label="calendar"></button>
 						</div>
 						<div class="appointment_item people">
 							<div class="adults">
 								<label for="number_of_adults" class="position_adults">Взрослые:</label>
-								<button class="button minus">-</button>
-								<input type="text" min="1" max="4" name="adults" id="number_of_adults" placeholder="2">
-								<button class="button plus">+</button>
+								<button type="button" class="button sign" aria-label="minus">-</button>
+								<input type="text" class="placeholder_num" name="adults" id="number_of_adults" placeholder="2">
+								<button type="button" class="button sign" aria-label="plus">+</button>
 							</div>
 							<div class="children">
 								<label for="amount_of_children" class="position_children">Дети:</label>
-								<button class="button minus">-</button>
-								<input type="text" min="1" max="4" name="children" id="number_of_adults" placeholder="2">
-								<button class="button plus">+</button>
+								<button type="button" class="button sign" aria-label="minus">-</button>
+								<input type="text" class="placeholder_num" name="children" id="number_of_adults" placeholder="2">
+								<button type="button" class="button sign" aria-label="plus">+</button>
 							</div>
 						</div>
 					</div>
-					<button type="submit" class="button find_button">Найти</button>
+					<button type="submit" class="button find_button" aria-label="to_find">Найти</button>
 				</form>
 
 			</section>
