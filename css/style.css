@@ -64,7 +64,8 @@ input[type="checkbox"].visually_hidden, {
   	border: none;
 }
 .btn_hotel_search {
-	
+	max-width: 568px;
+	max-height: 86px;
     text-align: center;
     color: #ffffff;
     font-size: 21px;
@@ -119,8 +120,7 @@ input[type="checkbox"].visually_hidden, {
 }
 
 .main_header_logo{
-	width: 459px;
-	height:353px;
+
     margin-left: auto;
     margin-right: auto;
 
@@ -139,13 +139,6 @@ input[type="checkbox"].visually_hidden, {
     background-repeat: no-repeat;
 	background-position-y: -83px;
 }
-
-.header_logo{
-   	width: 140px;
-   	height: 71px;
-}
-
-
 .position{
 	position: relative;
 }
@@ -177,9 +170,9 @@ input[type="checkbox"].visually_hidden, {
 
 	display: inline-block;
     padding: 0;
-    width: 140px;
+    vertical-align: top;
     position: absolute;
-    height: 71px;
+    
     margin-left: 51px;
 }
 .site_navigation li{
@@ -216,7 +209,8 @@ input[type="checkbox"].visually_hidden, {
 }
 
 .motto h3{
-	width: 440px;
+	max-width: 440px;
+	max-height: 48px;
   	font-size: 21px;
   	font-weight: bold;
   	line-height: 1.2;
@@ -238,6 +232,8 @@ input[type="checkbox"].visually_hidden, {
 	margin: 0 auto;
 }
 .motto p{
+	max-width: 493px;
+	max-height: 15px;
 	line-height: 1.86;
 	padding-top: 38px;
 }
@@ -248,18 +244,23 @@ input[type="checkbox"].visually_hidden, {
     min-height: 291px;
 }
 .interesting h3{
+	max-width: 434px;
+	max-height: 36px;
 	font-size: 30px;
-	padding-top: 57px;
+	padding-top: 47px;
+	padding-bottom: 25px;
 	margin: 0 auto;
   	font-weight: bold;
   	line-height: 1.2;
 }
 .interesting p{
-	width: 434px;
+	max-width: 436px;
+	max-height: 47px;
 	line-height: 1.71;
 	padding-bottom: 52px;
 	}
 .appointment_item input{
+
 	font: inherit;
 
 	width: 308px;
@@ -392,35 +393,54 @@ input[type="checkbox"].visually_hidden, {
     align-items: center;
     flex-direction: column;
 }
+.position_form input:hover{
+	background-color: #ebebeb;
+}
+.position_form input:focus{
+	border: solid 2px #e5e5e5;
+  	background-color: #ffffff;
+}
+
 
 .arrival_date{
 	display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 	margin-top: 55px;
 	width: 458px;
 	height: 38px;
 }
-.arrival_date label{
-	margin-right: 23px;
+.position_input input{
+	box-sizing: border-box;
+	text-transform: uppercase;
+	padding-left: 13px;
+	color: #000000;
+}
+.position_input input[type="text"]::placeholder{
+	color: #000000;
+}
+.people input{
+	box-sizing: border-box;
+	color: #000000;
 }
 .date_of_departure{
 	display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 	margin-top: 29px;
 	width: 458px;
 	height: 38px;
 	padding: 0;
 }
-.date_of_departure label{
-	margin-right: 20px;
-}
+
 .people{
 	display: flex;
 	margin-top: 30px;
 	width: 458px;
 	height: 38px;
+}
+.position_input{
+	display: flex;
 }
 .find_button{
 	margin-top: 54px;
@@ -460,6 +480,7 @@ input[type="checkbox"].visually_hidden, {
 	padding: 0;
     text-align: center;
 }
+
 .children label{
 	text-align: center;
 }
@@ -530,7 +551,7 @@ body{
   display: flex;
 }
 .footer_contacts {
-	
+	padding-top: 36px;
 	width: 223px;
   	margin: 0;
   	min-height: 48px;
@@ -538,6 +559,7 @@ body{
   	margin-left: 132px;
 }
 .footer_social {
+	padding-top: 36px;
 	width: 150px;
   	margin: 0;
   	min-height: 48px;
@@ -546,19 +568,19 @@ body{
 	display: flex;
 	flex-wrap: wrap;
     justify-content: space-around;
-    /*align-items: center;*/
     padding-left: 0px;
     margin: 0 auto;
     padding: 0;
 }
 
 .footer_copyright {
+	padding-top: 36px;
 	display: flex;
     align-items: center;
     justify-content: space-between;
 	width: 197px;
   	margin: 0;
-  	min-height: 48px;
+  	max-height: 41px;
   	margin-left: 228px;
 }
 .footer_position{
@@ -566,7 +588,6 @@ body{
     bottom: 0;
     margin: 0;
     background-color: rgba(255, 255, 255, 0.9);
-	align-items: center;
 	min-height: 120px;
 }
 .footer_map{
@@ -619,14 +640,10 @@ body{
     margin-top: 30px;
     margin-left: 72px;
 }
-.catalog_img img{
-	width: 135px;
-	height: 90px;
-}
+
 .catalog_img a{
 	display: inline-block;
-	width: 135px;
-	height: 90px;
+	vertical-align: baseline;
 }
 .main_position{
 	padding: 0;
@@ -742,7 +759,11 @@ body{
 	padding: 0;
     margin: 0;
     display: inline-block;
+    vertical-align: top;
     border: none;
+}
+.position_fildset{
+	padding-left: 115px;
 }
 .position_type_of_housing{
 	padding-left: 111px;
@@ -899,7 +920,6 @@ body{
 }
 .filter_option{
 	margin-bottom: 23px;
-    /*padding-left: 40px;*/
 }
 .filter legend{
 	margin-bottom: 24px;
@@ -938,7 +958,32 @@ body{
 	background-repeat: no-repeat;
 }
 
+.filter_input_checkbox:disabled + label::after {
+	content: "";
+	position: absolute;
 
+	width: 27px;
+	height: 23px;
+	left: 0;
+	background-image: url(../img/checkbox-off-dis.svg);
+	background-repeat: no-repeat;
+
+}
+.filter_input_checkbox:checked:disabled + label::after{
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	left: 0;
+	background-image: url(../img/checkbox-on-off-dis.svg);
+	background-repeat: no-repeat;
+}
+.filter_input_checkbox:checked + label::before {
+  background-image: none;
+}
+.filter_input_checkbox:disabled + label::before{
+	background-image: none;
+}
 
 
 
@@ -996,14 +1041,16 @@ body{
 }
 
 .price_controls input {
-  width: 50px;
-  margin: 0;
+	height: 36px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
 
-  color: inherit;
-  font: inherit;
+    color: inherit;
+    font: inherit;
 
-  background: none;
-  border: none;
+    background: none;
+    border: none;
 }
 
 .range_controls {
@@ -1075,15 +1122,10 @@ body{
 
 /*------------------------------------form--------------------------------------------*/
 .date_input{
-	
 	padding: 0;
 
 }
-.date_input::placeholder{
-	text-transform: uppercase;
-	padding-left: 13px;
-	color: #000000;
-}
+
 .calendar{
 	background-color: #f2f2f2;
 	width: 38px;
@@ -1185,6 +1227,8 @@ body{
     margin: 0;
 }
 .content_service p{
+	max-width: 285px;
+	max-height: 36px;
 	font-size: 14px;
     font-weight: normal;
     line-height: 21px;
@@ -1214,7 +1258,8 @@ body{
 
 }
 .content_merit h3{
-	width: 151px;
+	max-width: 151px;
+	max-height: 42px;
 	font-size: 21px;
     font-weight: bold;
     line-height: 21px;
@@ -1222,6 +1267,8 @@ body{
 	margin: 0;
 }
 .content_merit p{
+	max-width: 280px;
+	max-height: 42px;
 	font-size: 14px;
     font-weight: normal;
     line-height: 21px;
@@ -1272,7 +1319,8 @@ body{
 
 }
 .content_dignity h3{
-	width: 151px;
+	max-width: 151px;
+	max-height: 42px;
 	font-size: 21px;
     font-weight: bold;
     line-height: 21px;
@@ -1280,6 +1328,7 @@ body{
 	margin: 0;
 }
 .content_dignity p{
+
 	font-size: 14px;
     font-weight: normal;
     line-height: 21px;
@@ -1288,10 +1337,22 @@ body{
     margin-top: auto;
 }
 .size_dignity{
-	width: 262px;
+	max-width: 264px;
     height: 143px;
     padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 64px;
+}
+.size_third{
+	max-width: 262px;
+	max-height: 42px;
+}
+.size_fourth{
+	max-width: 264px;
+	max-height: 42px;
+}
+.size_fifth{
+	max-width: 248px;
+	max-height: 42px;
 }
