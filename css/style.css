@@ -34,7 +34,7 @@ a {
 	overflow: hidden;
 }
 .visually_hidden:not(:focus):not(:active),
-input[type="checkbox"].visually_hidden, {
+input[type="checkbox"].visually_hidden {
   position: absolute;
 
   width: 1px;
@@ -64,8 +64,7 @@ input[type="checkbox"].visually_hidden, {
   	border: none;
 }
 .btn_hotel_search {
-	max-width: 568px;
-	max-height: 86px;
+
     text-align: center;
     color: #ffffff;
     font-size: 21px;
@@ -120,12 +119,16 @@ input[type="checkbox"].visually_hidden, {
 }
 
 .main_header_logo{
-
+	
     margin-left: auto;
     margin-right: auto;
 
     padding-top: 76px;
 
+}
+.main_header_logo img{
+	max-width: 100%;
+	height: auto;
 }
 .main_header_intro a{
 	width: 459px;
@@ -174,6 +177,10 @@ input[type="checkbox"].visually_hidden, {
     position: absolute;
     
     margin-left: 51px;
+}
+.header_logo img{
+	max-width: 100%;
+	height: auto;
 }
 .site_navigation li{
 	width: 239px;
@@ -233,7 +240,7 @@ input[type="checkbox"].visually_hidden, {
 }
 .motto p{
 	max-width: 493px;
-	max-height: 15px;
+	max-height: 22px;
 	line-height: 1.86;
 	padding-top: 38px;
 }
@@ -257,7 +264,7 @@ input[type="checkbox"].visually_hidden, {
 	max-width: 436px;
 	max-height: 47px;
 	line-height: 1.71;
-	padding-bottom: 52px;
+	padding-bottom: 47px;
 	}
 .appointment_item input{
 
@@ -494,6 +501,7 @@ input[type="checkbox"].visually_hidden, {
 
 
 
+
 /*------------------------------------Сеточные стили---------------------------------------*/
 html,
 body{
@@ -572,7 +580,9 @@ body{
     margin: 0 auto;
     padding: 0;
 }
-
+.footer_icon li{
+	padding-bottom: 4px;
+}
 .footer_copyright {
 	padding-top: 36px;
 	display: flex;
@@ -593,9 +603,14 @@ body{
 .footer_map{
 	height: 593px;
 }
+.footer_map img{
+	max-width: 100%;
+	height: auto;
+}
 /*---------------------------main catalog--------------------*/
 .result_content{
 	display: flex;
+	min-height: 150px;
 	background-color: #ffffff;
 	max-width: 1200px;
 	margin-bottom: 1px;
@@ -604,7 +619,6 @@ body{
 	padding: 0;
     display: flex;
     margin: 0;
-    padding-bottom: 13px;
 }
 .price p{
 	margin: 0;
@@ -613,15 +627,17 @@ body{
 }
 .functions{
 	display: flex;
-    width: 222px;
+	flex-wrap: wrap;
+    max-width: 258px;
+    margin-bottom: 30px;
+}
+.functions div{
+	padding-top: 13px;
 }
 
 .book{
-	margin-left: 8px;
-    width: 142px;
-    height: 27px;
-    background-color: #766357;
-    text-align: center;
+	margin-left: 6px;
+    
 
 }
 .hostel{
@@ -630,9 +646,8 @@ body{
 }
 .price_hostel{
 	width: 142px;
-	margin-left: 8px;
+	margin-left: 6px;
 	text-align: left;
-	margin-left: 8px;
 }
 .catalog_img{
 	margin-right: 38px;
@@ -640,16 +655,23 @@ body{
     margin-top: 30px;
     margin-left: 72px;
 }
+.catalog_img img{
+	max-width: 100%;
+	height: auto;
+}
 
 .catalog_img a{
-	display: inline-block;
+	display: block;
 	vertical-align: baseline;
+	width: 135px;
+    height: 90px;
 }
 .main_position{
+	display: flex;
+	flex-direction: column;
 	padding: 0;
 	margin: 0 auto;
 }
-
 .rating{
 	margin-left: auto;
 }
@@ -662,6 +684,10 @@ body{
 	padding: 0;
     display: flex;
     justify-content: flex-end;
+}
+.star img{
+	max-width: 100%;
+	height: auto;
 }
 .star li{
 	display: flex;
@@ -692,6 +718,7 @@ body{
     padding-bottom: 0px;
 }
 .name{
+	max-width: 258px;
 	color: #000000;
 	font-size: 21px;
     font-weight: bold;
@@ -825,10 +852,16 @@ body{
 .sorting{
 	display: flex;
 	align-items: center;
-	height: 86px;
+	min-height: 86px;
 	max-width: 1200px;
     margin-bottom: 1px;
     background-color: #ffffff;
+}
+.sorting:before{
+	content: "";
+    display: inline-block;
+    min-height: 86px;
+    visibility: hidden;
 }
 .position_sorting{
 	display: flex;
@@ -838,6 +871,7 @@ body{
 }
 .filter_sorting{
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -921,6 +955,7 @@ body{
 .filter_option{
 	margin-bottom: 23px;
 }
+
 .filter legend{
 	margin-bottom: 24px;
 }
@@ -936,6 +971,12 @@ body{
 	cursor: pointer;
 	user-select: none;
 }
+.filter_input_checkbox:focus + label::before {
+	border-color: #663d15;
+  	outline: thin dotted;
+  	outline: 5px auto -webkit-focus-ring-color;
+
+	}
 .filter_input_checkbox + label::before {
 	content: "";
 	position: absolute;
@@ -1172,14 +1213,16 @@ body{
 /*------------------------------------------section----------------------------------------*/
 .real_town{
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-	max-height: 256px;
+	min-height: 256px;
 
 }
 .services{
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-	max-height: 330px;
+	min-height: 330px;
 }
 .content_service{
 	display: flex;
@@ -1199,7 +1242,10 @@ body{
 	padding-top: 28px;
 	padding-bottom: 28px;
 }
-
+.size_service_first img{
+	max-width: 100%;
+	height: auto;
+}
 .size_service_second{
 	width: 285px;
     padding-top: 62px;
@@ -1208,6 +1254,10 @@ body{
 .size_service_second h3{
 	padding-top: 30px;
 	padding-bottom: 26px;
+}
+.size_service_second img{
+	max-width: 100%;
+	height: auto;
 }
 .size_service_third{
 	padding-top: 56px;
@@ -1226,6 +1276,10 @@ body{
     color: #000000;
     margin: 0;
 }
+.size_service_third img{
+	max-width: 100%;
+	height: auto;
+}
 .content_service p{
 	max-width: 285px;
 	max-height: 36px;
@@ -1240,7 +1294,6 @@ body{
 	width: 400px;
 	flex-grow: 1;
 	text-align: center;
-	flex-grow: 0;
 	background-color: #ffffff;
 
 }
@@ -1308,7 +1361,7 @@ body{
 .dignity{
 	width: 400px;
 	text-align: center;
-	flex-grow: 0;
+	flex-grow: 1;
 	background-color: #eeeeee;
 }
 .content_dignity{
@@ -1337,8 +1390,8 @@ body{
     margin-top: auto;
 }
 .size_dignity{
-	max-width: 264px;
-    height: 143px;
+	max-width: 262px;
+    height: 142px;
     padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
