@@ -64,12 +64,16 @@ input[type="checkbox"].visually_hidden {
   	border: none;
 }
 .btn_hotel_search {
-
+	vertical-align: middle;
     text-align: center;
     color: #ffffff;
     font-size: 21px;
+    font-weight: bold;
     line-height: 1.24;
-    padding: 32px 145px;
+    padding-top: 30px;
+    padding-bottom: 31px;
+    padding-left: 140px;
+    padding-right: 139px;
     background-color: #766357;
 }
 .btn_hotel_search:hover,
@@ -136,7 +140,7 @@ input[type="checkbox"].visually_hidden {
 
 }
 .main_header_intro{
-	height: 501px;
+	height: 508px;
 	background-image: url("../img/background-photo.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
@@ -163,28 +167,49 @@ input[type="checkbox"].visually_hidden {
 	margin-bottom: 0px;
 	padding: 0;
 }
+.site_navigation li{
+	width: 239px;
+}
 .position_nav a{
 	display: block;
 	text-align: center;
-    padding: 15px 70px;
+	padding-top: 15px;
+    padding-bottom: 15px;
 
 }
-.position_nav .position_logo{
+.position_nav li:nth-child(1) a{
+	padding-left: 71px;
+    padding-right: 73px;
+}
+.position_nav li:nth-child(2) a{
+	padding-left: 73px;
+    padding-right: 68px;
+}
+.position_nav li:nth-child(3){
+	width: 244px;
+}
+.position_nav li:nth-child(4) a{
+	padding-left: 76px;
+    padding-right: 73px;
+    letter-spacing: 0.4px;
+}
+.position_nav li:nth-child(5) a{
+	padding-left: 88px;
+    padding-right: 72px;
+}
 
+.position_logo{
 	display: inline-block;
-    padding: 0;
-    vertical-align: top;
-    position: absolute;
-    
-    margin-left: 51px;
+	vertical-align: top;
+	position: absolute;
+    margin-left: 529px;
+    margin-right: 531px;
 }
 .header_logo img{
 	max-width: 100%;
 	height: auto;
 }
-.site_navigation li{
-	width: 239px;
-}
+
 
 .site_navigation a{
 	color: #000000;
@@ -220,9 +245,9 @@ input[type="checkbox"].visually_hidden {
 	max-height: 48px;
   	font-size: 21px;
   	font-weight: bold;
-  	line-height: 1.2;
+  	line-height: 1.24;
   	margin: 0 auto;
-  	padding-top: 61px;
+  	padding-top: 60px;
 }
 .text_p p{
 	font-family: "PT Sans", Arial, sans-serif;
@@ -242,7 +267,7 @@ input[type="checkbox"].visually_hidden {
 	max-width: 493px;
 	max-height: 22px;
 	line-height: 1.86;
-	padding-top: 38px;
+	padding-top: 32px;
 }
 
 .interesting{
@@ -254,8 +279,8 @@ input[type="checkbox"].visually_hidden {
 	max-width: 434px;
 	max-height: 36px;
 	font-size: 30px;
-	padding-top: 47px;
-	padding-bottom: 25px;
+	padding-top: 51px;
+	padding-bottom: 24px;
 	margin: 0 auto;
   	font-weight: bold;
   	line-height: 1.2;
@@ -417,6 +442,9 @@ input[type="checkbox"].visually_hidden {
 	width: 458px;
 	height: 38px;
 }
+.arrival_date label{
+	letter-spacing: 0.4px;
+}
 .position_input input{
 	box-sizing: border-box;
 	text-transform: uppercase;
@@ -439,7 +467,9 @@ input[type="checkbox"].visually_hidden {
 	height: 38px;
 	padding: 0;
 }
-
+.date_of_departure label{
+	letter-spacing: 0.4px;
+}
 .people{
 	display: flex;
 	margin-top: 30px;
@@ -548,7 +578,7 @@ body{
 
 .main_footer{
 	min-height: 120px;
-	padding: 36px 0;
+	/*padding: 36px 0;*/
 
 	width: 1200px;
     margin: 0 auto;
@@ -560,22 +590,30 @@ body{
 }
 .footer_contacts {
 	padding-top: 36px;
-	width: 223px;
+	width: 224px;
   	margin: 0;
+  	padding: 0;
   	min-height: 48px;
-  	margin-right: 169px;
-  	margin-left: 132px;
+  	margin-left: 124px;
+  	
+}
+.footer_contacts p:nth-child(1){
+    padding-top: 31px;
+}
+.footer_contacts p:nth-child(2){
+    padding-top: 2px;
 }
 .footer_social {
 	padding-top: 36px;
 	width: 150px;
   	margin: 0;
+  	margin-left: 176px;
   	min-height: 48px;
 }
 .footer_icon{
 	display: flex;
 	flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 0px;
     margin: 0 auto;
     padding: 0;
@@ -584,7 +622,7 @@ body{
 	padding-bottom: 4px;
 }
 .footer_copyright {
-	padding-top: 36px;
+	padding-top: 40px;
 	display: flex;
     align-items: center;
     justify-content: space-between;
@@ -602,6 +640,7 @@ body{
 }
 .footer_map{
 	height: 593px;
+
 }
 .footer_map img{
 	max-width: 100%;
@@ -851,7 +890,6 @@ body{
 
 .sorting{
 	display: flex;
-	align-items: center;
 	min-height: 86px;
 	max-width: 1200px;
     margin-bottom: 1px;
@@ -865,9 +903,10 @@ body{
 }
 .position_sorting{
 	display: flex;
-    align-items: baseline;
     flex-grow: 0;
     margin-left: 72px;
+    max-height: 22px;
+    padding-top: 29px;
 }
 .filter_sorting{
 	display: flex;
@@ -893,10 +932,11 @@ body{
 
 .filter_sorting li{
 	padding-right: 33px;
+	padding-top: 7px;
 }
 .position_sorting h3{
 	margin: 0 auto;
-	margin-right: 49px;
+	margin-right: 48px;
     font-size: 21px;
     font-weight: bold;
     line-height: 1.24;
@@ -907,6 +947,7 @@ body{
 	font-size: 12px;
   	font-weight: normal;
   	line-height: 1.5;
+  	padding-top: 7px;
 }
 .line{
 	border-bottom: 1px dotted #81b3d2;
@@ -1240,7 +1281,7 @@ body{
 }
 .size_service_first h3{
 	padding-top: 28px;
-	padding-bottom: 28px;
+	padding-bottom: 25px;
 }
 .size_service_first img{
 	max-width: 100%;
@@ -1252,8 +1293,8 @@ body{
     padding-bottom: 82px;
 }
 .size_service_second h3{
-	padding-top: 30px;
-	padding-bottom: 26px;
+	padding-top: 29px;
+	padding-bottom: 24px;
 }
 .size_service_second img{
 	max-width: 100%;
@@ -1266,7 +1307,7 @@ body{
     
 }
 .size_service_third h3{
-	padding-top: 30px;
+	padding-top: 28px;
 	padding-bottom: 26px;
 }
 .content_service h3{
@@ -1326,10 +1367,14 @@ body{
     font-weight: normal;
     line-height: 21px;
     color: #ffffff;
-    margin-bottom: 0px;
-    margin-top: auto;
+    margin: 0;
 }
-
+.size_merit p:nth-child(2){
+	padding-top: 26px;
+}
+.size_merit p:nth-child(3){
+	padding-top: 21px;
+}
 .size_merit{
 	width: 280px;
     height: 146px;
@@ -1343,19 +1388,26 @@ body{
     height: 142px;
     margin-left: 48px;
     margin-right: 49px;
-    padding-top: 49px;
+    padding-top: 46px;
     padding-bottom: 65px;
+}
+.size_bridge p:nth-child(2){
+	padding-top: 24px;
+}
+.size_bridge p:nth-child(3){
+	max-width: 303px;
+	padding-top: 22px;
 }
 .bgr_real_town{
 	background-image: url(../img/feature-picture-1.jpg);
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 46% 54%;
 	flex-grow: 1
 }
 .bgr_devil_bridge{
 	background-image: url(../img/feature-picture-2.jpg);
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 47% 53%;
 	flex-grow: 1
 }
 .dignity{
@@ -1386,13 +1438,18 @@ body{
     font-weight: normal;
     line-height: 21px;
     color: #000000;
-    margin-bottom: 0px;
-    margin-top: auto;
+    margin: 0;
+}
+.content_dignity p:nth-child(2){
+	padding-top: 26px;
+}
+.content_dignity p:nth-child(3){
+	padding-top: 21px;
 }
 .size_dignity{
 	max-width: 262px;
     height: 142px;
-    padding-top: 50px;
+    padding-top: 46px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 64px;
