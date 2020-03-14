@@ -153,12 +153,11 @@ input[type="checkbox"].visually_hidden {
 
 .polygon{
 	height: 59px;
-    width: 1203px;
+    width: 1200px;
     background-image: url(../img/polygon.svg);
     background-color: transparent;
     position: absolute;
-    top: -57px;
-    left: -1px;
+    top: -56px;
 }
 
 .site_navigation{
@@ -169,6 +168,7 @@ input[type="checkbox"].visually_hidden {
 }
 .site_navigation li{
 	width: 239px;
+	height: 56px;
 }
 .position_nav a{
 	display: block;
@@ -180,7 +180,7 @@ input[type="checkbox"].visually_hidden {
 
 }
 .position_nav li:nth-child(1) a{
-	padding-left: 71px;
+	padding-left: 69px;
     padding-right: 73px;
 }
 .position_nav li:nth-child(2) a{
@@ -191,12 +191,12 @@ input[type="checkbox"].visually_hidden {
 	width: 244px;
 }
 .position_nav li:nth-child(4) a{
-	padding-left: 76px;
+	padding-left: 71px;
     padding-right: 73px;
     letter-spacing: 0.4px;
 }
 .position_nav li:nth-child(5) a{
-	padding-left: 88px;
+	padding-left: 78px;
     padding-right: 72px;
 }
 
@@ -557,6 +557,7 @@ body{
 	margin-bottom: 76px;
 	min-height: 56px;
 	margin: 0 auto;
+	padding: 0;
 
 }
 
@@ -641,8 +642,13 @@ body{
 	min-height: 120px;
 }
 .footer_map{
+	background-image: url(../img/map.png);
+	background-repeat: no-repeat;
+	width: 1200px;
 	height: 593px;
-
+}
+.footer_map iframe{
+	border: 0;
 }
 .footer_map img{
 	max-width: 100%;
