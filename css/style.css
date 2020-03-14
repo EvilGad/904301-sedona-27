@@ -17,7 +17,7 @@ a {
 }
 .shadow{
 	width: 1200px;
-    max-height: 2762px;
+    min-height: 2762px;
     background-color: #f2f2f2;
     margin-left: auto;
     margin-right: auto;
@@ -141,6 +141,7 @@ input[type="checkbox"].visually_hidden {
 }
 .main_header_intro{
 	height: 508px;
+	background-color: #9999CC;
 	background-image: url("../img/background-photo.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
@@ -168,7 +169,7 @@ input[type="checkbox"].visually_hidden {
 }
 .site_navigation li{
 	width: 239px;
-	height: 56px;
+	min-height: 56px;
 }
 .position_nav a{
 	display: block;
@@ -176,7 +177,7 @@ input[type="checkbox"].visually_hidden {
 	padding-top: 15px;
     padding-bottom: 15px;
     width: 99px;
-    max-height: 13px;
+    min-height: 13px;
 
 }
 .position_nav li:nth-child(1) a{
@@ -197,7 +198,7 @@ input[type="checkbox"].visually_hidden {
 }
 .position_nav li:nth-child(5) a{
 	padding-left: 78px;
-    padding-right: 72px;
+    padding-right: 62px;
 }
 
 .position_logo{
@@ -244,7 +245,7 @@ input[type="checkbox"].visually_hidden {
 
 .motto h3{
 	max-width: 440px;
-	max-height: 48px;
+	min-height: 48px;
   	font-size: 21px;
   	font-weight: bold;
   	line-height: 1.24;
@@ -267,9 +268,10 @@ input[type="checkbox"].visually_hidden {
 }
 .motto p{
 	max-width: 493px;
-	max-height: 22px;
+	min-height: 22px;
 	line-height: 1.86;
-	padding-top: 32px;
+	padding-top: 28px;
+	padding-bottom: 50px;
 }
 
 .interesting{
@@ -279,9 +281,9 @@ input[type="checkbox"].visually_hidden {
 }
 .interesting h3{
 	max-width: 434px;
-	max-height: 36px;
+	min-height: 36px;
 	font-size: 30px;
-	padding-top: 51px;
+	padding-top: 50px;
 	padding-bottom: 24px;
 	margin: 0 auto;
   	font-weight: bold;
@@ -289,7 +291,7 @@ input[type="checkbox"].visually_hidden {
 }
 .interesting p{
 	max-width: 436px;
-	max-height: 47px;
+	min-height: 47px;
 	line-height: 1.71;
 	padding-bottom: 47px;
 	}
@@ -668,6 +670,8 @@ body{
     margin: 0;
 }
 .price p{
+	max-width: 110px;
+	min-height: 20px;
 	margin: 0;
 	line-height: 1.5;
 	text-align: left;
@@ -770,7 +774,7 @@ body{
 	font-size: 21px;
     font-weight: bold;
     line-height: 1.24;
-    padding-bottom: 11px;
+    padding-bottom: 10px;
 }
 .name a{
 	color: #000000;
@@ -817,6 +821,7 @@ body{
 .filter{
 	display: flex;
 	min-height: 217px;
+	background-color: #9999CC;
 	background-image: url(../img/filter-background.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -837,7 +842,7 @@ body{
     border: none;
 }
 .position_fildset{
-	padding-left: 117px;
+	padding-left: 119px;
 }
 .position_type_of_housing{
 	padding-left: 111px;
@@ -1021,7 +1026,7 @@ body{
 	cursor: pointer;
 	user-select: none;
 	padding: 0;
-    padding-left: 39px;
+    padding-left: 40px;
     padding-top: 2px;
 }
 .filter_input_checkbox:focus + label::before {
@@ -1335,17 +1340,17 @@ body{
 	height: auto;
 }
 .content_service p{
-	max-width: 285px;
-	max-height: 36px;
 	font-size: 14px;
     font-weight: normal;
     line-height: 21px;
     color: #000000;
+    margin: 0;
     margin-bottom: 0px;
-    margin-top: auto;
+
 }
 .service_block{
 	width: 400px;
+	min-height: 330px;
 	flex-grow: 1;
 	text-align: center;
 	background-color: #ffffff;
@@ -1423,8 +1428,15 @@ body{
 	background-position: 47% 53%;
 	flex-grow: 1
 }
+.dignity_sections{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 256px;
+}
 .dignity{
 	width: 400px;
+	min-height: 256px;
 	text-align: center;
 	flex-grow: 1;
 	background-color: #eeeeee;
@@ -1438,7 +1450,7 @@ body{
 }
 .content_dignity h3{
 	max-width: 151px;
-	max-height: 42px;
+	min-height: 42px;
 	font-size: 21px;
     font-weight: bold;
     line-height: 21px;
@@ -1461,21 +1473,20 @@ body{
 }
 .size_dignity{
 	max-width: 262px;
-    height: 142px;
     padding-top: 46px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 64px;
+    padding-bottom: 59px;
 }
 .size_third{
 	max-width: 262px;
-	max-height: 42px;
+	min-height: 42px;
 }
 .size_fourth{
 	max-width: 264px;
-	max-height: 42px;
+	min-height: 42px;
 }
 .size_fifth{
 	max-width: 248px;
-	max-height: 42px;
+	min-height: 42px;
 }
